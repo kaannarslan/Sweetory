@@ -1,0 +1,27 @@
+{
+  "recipes": [
+    {
+      "id": "wheat",
+      "durationTicks": 8,
+      "inputs": [],
+      "outputs": [ { "item": "wheat", "count": 1 } ]
+    },
+    {
+      "id": "flour",
+      "durationTicks": 6,
+      "inputs": [ { "item": "wheat", "count": 1 } ],
+      "outputs": [ { "item": "flour", "count": 1 } ]
+    },
+    {
+      "id": "bread",
+      "durationTicks": 12,
+      "inputs": [ { "item": "flour", "count": 2 } ],
+      "outputs": [ { "item": "bread", "count": 1 } ]
+    }
+  ],
+  "buildings": [
+    { "id": "wheat_field", "recipe": "wheat" },
+    { "id": "mill", "recipe": "flour" },
+    { "id": "oven", "recipe": "bread" }
+  ]
+}
