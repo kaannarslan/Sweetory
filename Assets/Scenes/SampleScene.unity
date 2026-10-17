@@ -340,6 +340,145 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1806251796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1806251801}
+  - component: {fileID: 1806251800}
+  - component: {fileID: 1806251799}
+  - component: {fileID: 1806251798}
+  - component: {fileID: 1806251797}
+  m_Layer: 0
+  m_Name: Game
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1806251797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806251796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be1e686e5e91c5499e0cf6ffb596ef9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Sweetory.Game::Sweetory.Game.WorldRenderer
+  runner: {fileID: 1806251800}
+  groundA: {r: 0.9647059, g: 0.90588236, b: 0.8117647, a: 1}
+  groundB: {r: 0.94509804, g: 0.87058824, b: 0.7607843, a: 1}
+  beltColor: {r: 0.54901963, g: 0.41568628, b: 0.33333334, a: 1}
+  arrowColor: {r: 0.43137255, g: 0.3137255, b: 0.2509804, a: 1}
+  progressColor: {r: 1, g: 1, b: 1, a: 0.78431374}
+  colors:
+  - id: wheat_field
+    color: {r: 0.7882353, g: 0.83137256, b: 0.41568628, a: 1}
+  - id: mill
+    color: {r: 0.7254902, g: 0.6431373, b: 0.5411765, a: 1}
+  - id: oven
+    color: {r: 0.8509804, g: 0.46666667, b: 0.23137255, a: 1}
+  - id: wheat
+    color: {r: 0.9098039, g: 0.75686276, b: 0.2901961, a: 1}
+  - id: flour
+    color: {r: 0.9843137, g: 0.972549, b: 0.9411765, a: 1}
+  - id: bread
+    color: {r: 0.70980394, g: 0.4117647, b: 0.18039216, a: 1}
+--- !u!23 &1806251798
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806251796}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 87f8a4af999161a4a8aa2ab69815dfad, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1806251799
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806251796}
+  m_Mesh: {fileID: 0}
+--- !u!114 &1806251800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806251796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd5ee54e3af04e43b293ac1720484aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Sweetory.Game::Sweetory.Game.GameRunner
+  gameDataJson: {fileID: 4900000, guid: 7e49065f70cee324b99b4c382afa98ff, type: 3}
+  worldWidth: 24
+  worldHeight: 14
+  ticksPerSecond: 5
+--- !u!4 &1806251801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806251796}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1852513778
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,3 +626,4 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 1852513783}
+  - {fileID: 1806251801}

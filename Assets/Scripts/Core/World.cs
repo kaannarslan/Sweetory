@@ -18,6 +18,10 @@ namespace Sweetory.Core
         public int Width => grid.Width;
         public int Height => grid.Height;
 
+        // Çizim katmanının dolaşması için salt okunur görünüm.
+        public IReadOnlyList<Belt> Belts => belts;
+        public IReadOnlyList<Building> Buildings => buildings;
+
         // Şimdiye kadar çalışan tick sayısı. Gerçek zamanla bağlantısı yok; onu oyun katmanı belirler.
         public long TickCount { get; private set; }
 
